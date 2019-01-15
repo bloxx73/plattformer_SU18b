@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour {
 
+    //static gör så att allt e detsamma för alla
     public static int Score;
     public int amount = 1;
     public float spinspeed = 180;

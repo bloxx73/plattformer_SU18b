@@ -16,7 +16,6 @@ public class Movement : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
         rbody = GetComponent<Rigidbody2D>();
     }
 
@@ -26,13 +25,13 @@ public class Movement : MonoBehaviour
         // så att playern får fart och rör sig.
         rbody.velocity = new Vector2(
         Input.GetAxisRaw("Horizontal") * moveSpeed, rbody.velocity.y);
+        
         //om space e ner tryckt hoppa.
-
         if (Input.GetButtonDown("Jump"))
-        {//signalerar till min ground check collider att kolla så att playern är på marken så att playern kan hoppa.
-
+        {
+            //signalerar till min ground check collider att kolla så att playern är på marken så att playern kan hoppa.
             if (markkoll.isGrounded > 0)
-            {// ger playern fart uppåt så att man man hoppa.
+            {   // ger playern fart uppåt så att man man hoppa.
                 rbody.velocity = new Vector2(rbody.velocity.x, jumpSpeed);
             }
         }

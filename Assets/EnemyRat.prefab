@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 60698560740513610}
   - component: {fileID: 50917125670089442}
   - component: {fileID: 114916900664961484}
-  - component: {fileID: 114895182733236682}
+  - component: {fileID: 114272246608919398}
   m_Layer: 0
   m_Name: EnemyRat
   m_TagString: Enemy
@@ -117,7 +117,7 @@ PolygonCollider2D:
       - {x: 0.3986001, y: -0.34369874}
       - {x: 0.40637302, y: -0.3138423}
       - {x: 0.40578103, y: -0.24445081}
---- !u!114 &114895182733236682
+--- !u!114 &114272246608919398
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
